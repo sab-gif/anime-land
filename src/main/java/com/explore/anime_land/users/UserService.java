@@ -57,7 +57,7 @@ public class UserService implements UserDetailsService {
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    public UserResponse addAmin(UserRegisterRequest request) {
+    public UserResponse addAdmin(UserRegisterRequest request) {
         return addUserByRole(request, Role.ADMIN);
     }
 
