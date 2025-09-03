@@ -36,7 +36,7 @@ public class User {
     @Column(nullable = false)
     private Role role;
 
-    @OneToMany(mappedBy = "anime",cascade = CascadeType.ALL,orphanRemoval = true )
+    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL,orphanRemoval = true )
     private List<Anime> anime;
 
     public boolean hasRole(Role role) { return this.role == role; }
