@@ -1,4 +1,4 @@
 package com.explore.anime_land.security.jwt;
 
-public class JwtResponse {
+public record JwtResponse (String token) {
 }
