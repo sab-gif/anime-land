@@ -1,4 +1,13 @@
 package com.explore.anime_land.anime.dto;
 
-public record AnimeResponse() {
+import com.explore.anime_land.users.dto.UserResponseShort;
+
+public record AnimeResponse(
+        Long id,
+        String title,
+        String genre,
+        String description,
+        String image,
+        UserResponseShort user
+) {
 }
