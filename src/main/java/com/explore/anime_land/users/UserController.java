@@ -1,5 +1,7 @@
 package com.explore.anime_land.users;
 
+import com.explore.anime_land.anime.AnimeService;
+import com.explore.anime_land.anime.dto.AnimeResponse;
 import com.explore.anime_land.common.SecuredBaseController;
 import com.explore.anime_land.security.CustomUserDetail;
 import com.explore.anime_land.users.dto.UserRegisterRequest;
@@ -10,6 +12,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 
 @RestController
