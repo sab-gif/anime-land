@@ -1,8 +1,3 @@
-admin:
-  email: ${ADMIN_EMAIL:admin@example.com}
-  username: ${ADMIN_USERNAME:admin}
-  password: ${ADMIN_PASSWORD:password1234}
-
 spring:
   security:
     user:
@@ -65,3 +60,8 @@ springdoc:
     path: /swagger-ui.html
     operationsSorter: method
 #    tagsSorter: alpha
+
+admin:
+  email: ${ADMIN_EMAIL:admin@example.com}
+  username: ${ADMIN_USERNAME:admin}
+  password: ${ADMIN_PASSWORD:password1234}
