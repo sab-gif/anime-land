@@ -86,8 +86,9 @@ public class RecommendationController {
     public ResponseEntity<List<RecommendationResponse>> getMyRecommendations (
             @AuthenticationPrincipal CustomUserDetail userDetail) {
         List<RecommendationResponse> list = recommendationService.getRecommendationByUser(userDetail.getUser());
+        return ResponseEntity.ok(list);
     }
-    )
+
 
 
 }
